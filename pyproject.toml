@@ -1,0 +1,20 @@
+[project]
+name = "augmentacao-assessores"
+version = "1.0.0"
+description = "Pipeline de envio automatizado de relatórios XPerformance (XP) para clientes via WhatsApp com IA"
+requires-python = ">=3.11"
+dependencies = [
+    "google-ai-generativelanguage>=0.6.10",
+    "google-api-python-client>=2.159.0",
+    "google-auth>=2.37.0",
+    "google-generativeai>=0.8.3",
+    "pandas>=2.2.3",
+    "python-dotenv>=1.0.0",
+    "requests>=2.30.0",
+]
+
+[project.scripts]
+augmentacao = "main:main"
+
+[tool.setuptools.packages.find]
+include = ["src*"]

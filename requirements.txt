@@ -1,0 +1,21 @@
+# Python
+google-ai-generativelanguage>=0.6.10
+google-api-core>=2.24.0
+google-api-python-client>=2.159.0
+google-auth>=2.37.0
+google-cloud-aiplatform>=1.78.0
+google-cloud-bigquery>=3.29.0
+google-cloud-core>=2.4.1
+google-cloud-resource-manager>=1.14.0
+google-cloud-storage>=2.19.0
+google-crc32c>=1.6.0
+google-genai>=1.2.0
+google-generativeai>=0.8.3
+google-resumable-media>=2.7.2
+googleapis-common-protos>=1.66.0
+pandas>=2.2.3
+pandas-gbq>=0.25.0
+python-dotenv>=1.0.0
+requests>=2.30.0
+Pillow>=11.1.0
+numpy>=2.2.1

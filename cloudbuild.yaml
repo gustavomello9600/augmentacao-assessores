@@ -1,0 +1,13 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'gcr.io/idata-421415/augmentacao-assessores'
+      - '.'
+
+images:
+  - 'gcr.io/idata-421415/augmentacao-assessores'
+
+options:
+  logging: CLOUD_LOGGING_ONLY

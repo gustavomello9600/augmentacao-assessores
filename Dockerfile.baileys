@@ -1,0 +1,22 @@
+# Dockerfile para o serviço Baileys (WhatsApp Web Gateway)
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Instalar dependências
+COPY package.json package-lock.json* ./
+RUN npm ci --production
+
+# Copiar código
+COPY baileys_service.js .
+
+# Criar diretório para sessões
+RUN mkdir -p /app/baileys_sessions
+
+EXPOSE 3100
+
+ENV PORT=3100
+ENV SESSION_DIR=/app/baileys_sessions
+ENV ASSESSOR_NOME="Assessor XP"
+
+CMD ["node", "baileys_service.js"]

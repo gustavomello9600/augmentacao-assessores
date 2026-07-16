@@ -1,0 +1,32 @@
+# Secrets
+.env
+*.pem
+*.key
+service_account*.json
+credentials*.json
+
+# Sessions WhatsApp
+sessions/
+*.creds.json
+
+# Dependencies
+venv/
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Build artifacts
+env-vars.yaml
+env-vars.txt
+qr_code.png
+
+# IDE
+.vscode/
+.idea/
+
+# Agemini symlink (importado como lib separadamente)
+agemini_lib/
